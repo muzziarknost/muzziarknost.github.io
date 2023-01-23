@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@media screen and (max-device-width:900px) {
+    
+}
+
+body{
+}
+
+
+
+/* Background das Páginas */
+
+.bg3{
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    align-items: center;
+    filter: brightness(50%);
+
+}
+
+  /* Imagens adicionais */
+  .imagem-sobrenos{
+    position: absolute;
+    width: 305px;
+    height: 469px;
+    left: 968px;
+    top: 307px;
+    border-radius: 15px;
+}
+
+.bg_sobrenos{
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    align-items: center;
+    filter: brightness(50%);
+
+}
+
+
+    .arknostlogo{
+  position: absolute;
+  top: 61px;
+  left: 605px;
+  width: 231px;
+  height: 176px;
+  object-fit: cover;
+    }
+
+
+/* Textos principais de cada página */
+
+.texto-p{
+    position: absolute;
+    width: 851px;
+    height: 154px;
+    left: 295px;
+    top: 391px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.texto-sobrenos{
+    position: absolute;
+    width: 773px;
+    height: 444px;
+    left: 150px;
+    top: 290px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+}
+
+
+
+/*Nav-bar na parte de baixo */
+
+.home1{
+    position: absolute;
+width: 58px;
+height: 24px;
+left: 454px;
+top: 814px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+text-decoration: none;
+color: #FFFFFF;
+}
+
+.sobrenos{
+    position: absolute;
+width: 99px;
+height: 24px;
+left: 605px;
+top: 814px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+text-decoration: none;
+color: #FFFFFF;
+}
+
+.servicos{
+    position: absolute;
+width: 86px;
+height: 24px;
+left: 778px;
+top: 814px;
+text-decoration: none;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+text-decoration: none;
+color: #FFFFFF;
+}
+
+.contato{
+    position: absolute;
+width: 80px;
+height: 24px;
+left: 928px;
+top: 814px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+text-decoration: none;
+color: #FFFFFF;
+}
+
+  
+
+/* Textos de atribuição */
+
+.jakob-owens1 {
+    text-decoration: underline;
+  }
+  .jakob-owens {
+    color: inherit;
+  }
+  .foto-de-jakob-container {
+    position: absolute;
+    top: 954px;
+    left: 603px;
+    font-size: 14px;
+    font-family: Inter, sans-serif;
+    color: white;
+    text-align: left;
+  }
+
