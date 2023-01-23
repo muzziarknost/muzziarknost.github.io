@@ -1,7 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@media screen and (max-device-width:900px) {
+@media screen and (max-width: 768px) {
+    /* Change the width and height of the background image to 100% */
+    .bg3, .bg_sobrenos {
+      width: 100%;
+      height: 100%;
+    }
     
-}
+    /* Change the position and width of the additional images */
+    .imagem-sobrenos {
+      position: relative;
+      width: 80%;
+      left: 10%;
+      top: 0;
+    }
+  
+    /* Change the position and width of the logo */
+    .arknostlogo {
+      position: relative;
+      width: 50%;
+      left: 25%;
+      top: 0;
+    }
+  
+    /* Change the position and font-size of the text */
+    .texto-p, .texto-sobrenos {
+      position: relative;
+      width: 90%;
+      left: 5%;
+      font-size: 32px;
+    }
+  
+    /* Change the position and font-size of the navbar */
+    .home1, .sobrenos, .servicos, .contato {
+      position: relative;
+      width: 30%;
+      left: 35%;
+      font-size: 16px;
+    }
+  }
 
 body{
 }
