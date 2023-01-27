@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica MedMind</title>
+	<link rel="icon" type="text/css" href="img/Logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+	<header>
+		<nav class="navbar"> 
+			<img src="img/Logo.png" alt="Logo da Clínica" class="logo">
+            <a class="a-menu" href="index.html">Home</a>
+            <a class="a-menu" href="index.html #sobre_nos">Sobre nós</a>
+            <a class="a-menu" href="index.html #equipe">A equipe</a>
+            <a class="a-menu" href="index.html #serviços">Serviços oferecidos</a>
+            <a class="a-menu" href="Formulario.html">Agendamento</a>
+		</nav>
+	</header>
+	
+
+        <section id="pag-agendamento">
+            <h1>Clínica MedMind</h1><br>
+            <p class="texto-agendamento"> Agende sua Consulta! </p>
+        
+            <form name="frm=AGENDAMENTOS" method="GET" action="">
+                    <label for="Nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" size="50"  maxlength="100" placeholder="Nome completo" required/>
+        
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="nome@email.com" size=""/>
+
+                    <label for="Cel">Celular:</label>
+                    <input type="tel" name="cel" id="cel" placeholder="(99)99999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" size=""/>
+                    
+                    <div id="data-hora-qtd">
+                    
+                    <div>
+                    <label for="data">Data:</label>
+                    <input type="date" name="data" id="data"/>
+                    </div>
+                    <div>
+                    <label for="">Hora:</label><br>
+                    <input type="time" name="Hora" id="Hora"/>
+                    </div>
+                    <div>
+                    <label for="">Sessões</label>
+                    <input type="number" name="" id="" min="1" max="100" step="1"/>
+                    </div>
+                    </div>
+                    
+                    <label for="nivel">Tipo da Sessão:</label>
+                    <select id="nivel" name="Terapia">
+                        <option value="">Selecione</option>
+                        <option value="Terapia Individual">Terapia Individual</option>
+                        <option value="Terapia de Casal">Terapia de Casal</option>
+                        <option value="Terapia Familiar">Terapia Familiar</option>
+                        <option value="Terapia comportamental">Terapia Comportamental</option>
+                        <option value="Terapia cognitiva">Terapia Cognitiva</option>
+                    </select> 
+                
+
+        
+                   <label for="msg">Observações:</label><br>
+                   <textarea id="msg" name="msg" cols="45"rows="4"></textarea>
+        
+        
+                    <div id="botoes-form">
+                    <input type="submit"name="bt-enviar" value="Enviar"/>
+                    <input type="reset" name="bt-limpar" value="Limpar"/>
+                    </div>
+            </form>
+        
+        </section>
+
+        <footer>
+            <p>Desenvolvido por - <a href="https://www.instagram.com/eusxmuell">Samuel Júnior</a> - 2022
+          </footer>
+</body>
+</html>

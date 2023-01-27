@@ -1,235 +1,366 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* iPhone 12 Pro */
-@media (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
-    /* Change the width and height of the background image to 100% */
-    .bg3, .bg_sobrenos {
-      width: 100%;
-      height: 100%;
-    }
-  
-    /* Change the position and width of the additional images */
-    .imagem-sobrenos {
-      position: relative;
-      width: 80%;
-      left: 10%;
-      top: 0;
-    }
-  
-    /* Change the position and width of the logo */
-    .arknostlogo {
-      position: relative;
-      width: 50%;
-      left: 25%;
-      top: 0;
-    }
-  
-    /* Change the position and font-size of the text */
-    .texto-p, .texto-sobrenos {
-      position: relative;
-      width: 90%;
-      left: 5%;
-      font-size: 32px;
-    }
-  
-    /* Change the position and font-size of the navbar */
-    .home1, .sobrenos, .servicos, .contato {
-      position: relative;
-      width: 30%;
-      left: 35%;
-      font-size: 16px;
-    }
-  }
+
+*{margin:0; 
+  padding: 0;
+  box-sizing: border-box;  
+}
   
 
 body{
-}
-
-
-
-/* Background das Páginas */
-
-.bg3{
-    position: absolute;
-    width: 1920px;
-    height: 1080px;
-    left: 0px;
-    top: 0px;
-    align-items: center;
-    filter: brightness(50%);
-
-}
-
-  /* Imagens adicionais */
-  .imagem-sobrenos{
-    position: absolute;
-    width: 305px;
-    height: 469px;
-    left: 968px;
-    top: 307px;
-    border-radius: 15px;
-}
-
-.bg_sobrenos{
-    position: absolute;
-    width: 1920px;
-    height: 1080px;
-    left: 0px;
-    top: 0px;
-    align-items: center;
-    filter: brightness(50%);
-
-}
-
-
-    .arknostlogo{
-  position: absolute;
-  top: 61px;
-  left: 605px;
-  width: 231px;
-  height: 176px;
-  object-fit: cover;
+    font-family: Inter, sans-serif;
+    background-color:#5fa9a5;
+    overflow-y: scroll;
     }
 
+      
 
-/* Textos principais de cada página */
-
-.texto-p{
-    position: absolute;
-    width: 851px;
-    height: 154px;
-    left: 295px;
-    top: 391px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 77px;
+.navbar {
     display: flex;
     align-items: center;
-    
-    color: #FFFFFF;
-    
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-
-.texto-sobrenos{
-    position: absolute;
-    width: 773px;
-    height: 444px;
-    left: 150px;
-    top: 290px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 34px;
-    display: flex;
-    align-items: center;
-    
-    color: #FFFFFF;
+    background-color: #fff;
+    color: #fff;
+    padding: 1em;
 }
 
 
+.navbar .logo {
+    width: 50px;
+    height: 50px;
+    }
 
-/*Nav-bar na parte de baixo */
-
-.home1{
-    position: absolute;
-width: 58px;
-height: 24px;
-left: 454px;
-top: 814px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-display: flex;
-align-items: center;
-text-align: center;
-text-decoration: none;
-color: #FFFFFF;
-}
-
-.sobrenos{
-    position: absolute;
-width: 99px;
-height: 24px;
-left: 605px;
-top: 814px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-display: flex;
-align-items: center;
-text-align: center;
-text-decoration: none;
-color: #FFFFFF;
-}
-
-.servicos{
-    position: absolute;
-width: 86px;
-height: 24px;
-left: 778px;
-top: 814px;
-text-decoration: none;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-display: flex;
-align-items: center;
-text-align: center;
-text-decoration: none;
-color: #FFFFFF;
-}
-
-.contato{
-    position: absolute;
-width: 80px;
-height: 24px;
-left: 928px;
-top: 814px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-display: flex;
-align-items: center;
-text-align: center;
-text-decoration: none;
-color: #FFFFFF;
-}
-
-  
-
-/* Textos de atribuição */
-
-.jakob-owens1 {
-    text-decoration: underline;
+.navbar > * {
+    margin-left: auto;
   }
-  .jakob-owens {
-    color: inherit;
-  }
-  .foto-de-jakob-container {
-    position: absolute;
-    top: 954px;
-    left: 603px;
-    font-size: 14px;
-    font-family: Inter, sans-serif;
+
+/* Fixando a navbar na tela */
+nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Adicionando estilo às abas da navbar */
+nav.navbar a {
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0,5s ease-in-out;
+}
+nav.navbar a:hover, nav.navbar a.active {
+    background-color: #16AFB2;
     color: white;
-    text-align: left;
-  }
+    border-radius: 50px;
+}
+
+/* Adicionando um traço indicativo */
+nav.navbar a.active::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    
+}
+
+.a-menu:link, .a-menu:visited{
+    color: #16AFB2;
+}
+.a-menu:hover, .a-menu:active{
+    color: #000;
+}
+
+.a-menu{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+.nome-clinica {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/clinica.jpg);
+
+}
+    
+.nome-clinica-texto {
+    font-family: 'Inter', sans-serif;
+    font-size: 4em;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+}
+
+#texto2clinica{
+    font-family: 'Inter', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    margin-left: 1%;
+}
+
+
+/* Estilizando as fotos da equipe */
+.equipe-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.equipe-fotos div {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+img.equipe-img {
+    max-width: 200px; /* ou outro tamanho desejado */
+    max-height: 200px; /* ou outro tamanho desejado */
+    border-radius: 40px;
+    margin-top: 25px;
+}
+
+img.clinicaimagem{
+width: 350px;
+display: flex;
+float: right;
+margin-right: 150px;
+margin-top: -50px;
+
+margin-bottom: 75px;
+justify-content: center;
+border-radius: 150px;
+align-items: center;
+box-shadow:  0px 4px 4px rgba(0.25, 0, 0, 0.25);
+}
+
+.info {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 700;
+    text-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+.titulo-secoes{
+    color: #fff;
+    font-size: 45px;
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.text-margin {
+    margin-top: 20px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    font-size: 20px;
+    justify-content: center;
+    font-weight: 500;
+    color: white;
+
+}
+
+.text-margin a{
+    color: white;
+}
+
+.textoequipe{
+    color: #fff;
+    font-size: 45px;
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+ul{ padding: 40px;
+
+}
+li{ color: #000;
+    list-style-type: square
+    
+}
+
+#serviços{
+    color: #000;
+    
+}
+.serviços{
+    padding: 50px;
+    color: rgb(255, 255, 255);
+}
+.lista-bullet{
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    font-size: 22px;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.lista-bullet li{
+    color: #fff;
+}
+
+.ilustracao1{
+    width: 450px;
+margin-left: 400px;
+margin-bottom: 75px;
+justify-content: center;
+border-radius: 50px;
+align-items: center;
+
+}
+
+/* Formulario*/
+
+.texto-agendamento{
+    color: #fff;
+    font-size: 45px;
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    font-weight: 700;
+}
+
+form label{
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+form input, form select, form textarea {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border: 1px solid #5fa9a5;
+    outline: none;
+}
+
+
+#pag-agendamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+#pag-agendamento h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#pag-agendamento p{
+    font-size: 1.5em;
+    margin-bottom: 2em;
+	
+}
+
+#pag-agendamento form {
+    width: 80%;
+}
+
+#pag-agendamento label {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+#pag-agendamento input[type="text"],
+#pag-agendamento input[type="email"],
+#pag-agendamento input[type="tel"],
+#pag-agendamento input[type="date"],
+#pag-agendamento input[type="time"],
+#pag-agendamento input[type="number"],
+#pag-agendamento select {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+#pag-agendamento #data-hora-qtd{
+    display: flex;
+}
+
+#pag-agendamento #data-hora-qtd div {
+    margin-right: 1em;
+    }
+
+#pag-agendamento textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    }
+
+#pag-agendamento #botoes-form {
+    display: flex;
+    justify-content: center;
+    }
+
+#pag-agendamento #botoes-form input[type="submit"],
+#pag-agendamento #botoes-form input[type="reset"] {
+    padding: 0.5em 1em;
+    margin-left: 1em;
+    }
+
+      /* CSS for footer */
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        font-family: Inter, sans-serif;
+      }
+  
+      footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 0px;
+        font-family: Inter, sans-serif;
+        font-weight: 700;
+      }
+
+/* Mobile */
+
+
+
+
+
+
+
 
